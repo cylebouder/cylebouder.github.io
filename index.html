@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="description" content="Caleb Le Bouder — developer, Blair SMCS magnet, builder of interesting things.">
+  <title>Caleb Le Bouder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +16,7 @@
     <nav>
       <a href="#">Caleb Le Bouder</a>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -23,58 +26,22 @@
 
     <section id="hero">
       <h1>Caleb Le Bouder</h1>
-      <p>Short intro goes here.</p>
+      <p>Rising senior at Blair's STEM magnet program. I build things with code.</p>
     </section>
 
-    <section id="about">
+    <section id="about" class="reveal">
       <h2>About</h2>
       <p>I'm a rising senior in the Science, Mathematics, and Computer Science Magnet Program at Montgomery Blair High School. I'm proficient in Python, HTML, CSS, JavaScript, and Java.</p>
+      <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">Java</span>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
 
-      <div class="timeline-year">
-        <h3>2020</h3>
-        <div class="project">
-          <h4>Early Coding Projects — Mr. Tim's Class</h4>
-          <p>Built a blackjack game, a hangman game, and a program that calculates the prime factorization of any number — my first introduction to programming.</p>
-        </div>
-      </div>
-
-      <div class="timeline-year">
-        <h3>2025</h3>
-        <div class="project">
-          <h4>ResNet Object Recognition Demo — Columbia SHAPE Program</h4>
-          <p>Final project for the Columbia SHAPE program: a ResNet-based model that recognizes objects in real time through your camera.</p>
-        </div>
-        <div class="project">
-          <h4>Poker Hand Probability Calculator — ModSim Class</h4>
-          <p>Takes the current state of a poker hand — number of players, each player's hand, and cards already dealt — and calculates each player's odds of winning.</p>
-        </div>
-      </div>
-
-      <div class="timeline-year">
-        <h3>2026</h3>
-        <div class="project">
-          <h4>VR Panorama Generator <span class="status">In Progress</span></h4>
-          <p>Generates customizable VR panoramas from prompts, creating multiple variations, with an in-browser viewer similar to Google Street View.</p>
-        </div>
-        <div class="project">
-          <h4>Strategy Backtester</h4>
-          <p>An in-depth backtesting tool that analyzes an uploaded trading strategy using a range of different metrics and methods.</p>
-        </div>
-        <div class="project">
-          <h4>Pokémon Card Browser <span class="status">In Progress</span></h4>
-          <p>A visual-first way to browse Pokémon cards with minimal clicking — card art and market price shown directly, so you can browse quickly without digging into each card individually.</p>
-        </div>
-      </div>
-
-      <!-- To add a new project: copy a .project block into the relevant .timeline-year, or add a new .timeline-year block for a new year. -->
-
-    </section>
-
-    <section id="contact">
+<section id="contact" class="reveal">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:cylebouder@gmail.com">cylebouder@gmail.com</a></p>
     </section>
