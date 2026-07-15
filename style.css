@@ -57,7 +57,7 @@
   --dur-slow:    440ms;
 
   /* layout */
-  --max-w:      680px;
+  --max-w:      900px;
   --radius-sm:  3px;
   --radius-md:  8px;
   --radius-lg:  16px;
@@ -283,6 +283,10 @@ section h2 {
 
 /* ── projects — timeline ─────────────────────────────────────── */
 .timeline-year {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  column-gap: var(--space-10);
+  row-gap: var(--space-3);
   margin-bottom: var(--space-10);
 }
 
@@ -291,25 +295,19 @@ section h2 {
 }
 
 .timeline-year > h3 {
+  grid-column: 1;
+  grid-row: 1 / -1;
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   font-weight: 400;
   color: var(--color-accent);
-  letter-spacing: 0.08em;
-  margin-bottom: var(--space-4);
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-}
-
-.timeline-year > h3::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--color-rule);
+  letter-spacing: 0.06em;
+  padding-top: 1.1rem;
+  text-align: right;
 }
 
 .project {
+  grid-column: 2;
   padding: var(--space-5) var(--space-6);
   border-radius: var(--radius-md);
   border: 1px solid var(--color-rule);
@@ -322,9 +320,6 @@ section h2 {
     box-shadow   var(--dur-base) var(--ease-out);
 }
 
-.project:last-child {
-  margin-bottom: 0;
-}
 
 .project:hover {
   border-color: var(--color-accent-mid);
@@ -461,6 +456,20 @@ footer p {
     padding-top: var(--space-12);
     padding-bottom: var(--space-12);
   }
+
+  .timeline-year {
+    grid-template-columns: 1fr;
+    row-gap: var(--space-3);
+  }
+
+  .timeline-year > h3 {
+    grid-row: auto;
+    text-align: left;
+    padding-top: 0;
+    margin-bottom: var(--space-1);
+  }
+
+  .project { grid-column: 1; }
 }
 
 /* ── responsive — 414px ──────────────────────────────────────── */
