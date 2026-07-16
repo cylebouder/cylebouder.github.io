@@ -1,24 +1,51 @@
 # Portfolio Site — Progress Notes
 
 ## Done
-- Confirmed existing skeleton (`index.html`, `style.css`, `script.js`) with hero, about, projects, contact sections and nav
-- Hero and nav updated with name: Caleb Le Bouder
-- About section filled in: rising senior, SMCS Magnet Program at Montgomery Blair High School; proficient in Python, HTML, CSS, JavaScript, Java
-- Projects section restructured from generic cards into a chronological timeline (2020 / 2025 / 2026) to support a "long-time interest in CS" narrative for college apps:
-  - **2020** — Mr. Tim's class: blackjack, hangman, prime factorization (combined into one entry)
-  - **2025** — Columbia SHAPE program ResNet object recognition demo; ModSim class poker hand probability calculator
-  - **2026** — VR panorama generator (in progress), strategy backtester, Pokémon card browser (in progress)
-- Added an HTML comment marking exactly where to drop in new project entries later
-- Contact section: email only (`cylebouder@gmail.com`) — phone number was added then removed for privacy, since GitHub Pages sites get publicly indexed
+
+### Design & Structure
+- Applied full design system (Garden theme): DM Serif Display + DM Sans, warm cream background, leaf-green accent, OKLCH color tokens
+- Floating pill nav with active section highlighting and scroll shadow
+- Scroll reveal animations on sections
+- Responsive layout down to 320px
+- Split site into two pages:
+  - **Homepage** (`index.html`) — minimal: hero, about, contact only
+  - **Projects** (`projects.html`) — dedicated page with full timeline
+
+### Content
+- Hero tagline: "Rising senior at Blair's STEM magnet program. I build things with code."
+- About section with skill tags: Python, JavaScript, HTML/CSS, Java
+- Projects timeline restructured into two-column layout (year label left, cards right)
+- Individual project cards with descriptions and tech tags:
+  - **2020** — Blackjack, Hangman, Prime Factorization (separate cards)
+  - **2025** — Multi-Model Image Classifier (ResNet), Poker Hand Probability Calculator
+  - **2026** — Nash Equilibrium Simulator, VR Panorama Generator, Strategy Backtester, Pokémon Card Browser
+
+### ResNet Classifier (fully deployed)
+- Rewrote Flask app as a Streamlit app
+- Deployed to Streamlit Community Cloud: https://resnet-classifier-demo.streamlit.app/
+- Features: three models (ResNet-50 general, dog breeds, food), file upload + live webcam in each tab
+- GitHub repo: https://github.com/cylebouder/resnet-classifier
+- "Try it live →" link on the project card
 
 ## Deliberately left out for now
 - Mr. Ross startup internship project — pending confirmation on what can be shared (possible NDA/employer restrictions)
-- Uncle Nigel project — no real description yet, needs one before it can go in
-- Morgan State ML models — project isn't finished yet
+- Uncle Nigel project — no description yet
+- Morgan State ML models — not finished yet
+- Capture-the-flag online game (repo exists: `capture-the-flag-online`) — not added yet
 
 ## To do next
-- [ ] Write the hero intro line/subtitle under the name
-- [ ] Decide on additional languages/tools to list in About (SQL, C/C++, PyTorch/TensorFlow, Git were discussed — confirm which ones actually apply)
-- [ ] Add back internship / Uncle Nigel / Morgan State projects once cleared up and finished
-- [ ] Add links/images for each project (GitHub repos, live demos, screenshots) — none added yet
-- [ ] Styling/CSS pass — `style.css` and `script.js` are still empty; deferred intentionally until content was finished
+
+### Projects to add
+- [ ] **Poker calculator** — card in place, but no GitHub link yet (class org repo, not on personal GitHub)
+- [ ] **Nash Equilibrium Simulator** — card in place, no GitHub link (private repo)
+- [ ] **VR Panorama Generator** — in progress, repo exists (`vr-panorama`), add link when ready
+- [ ] **Strategy Backtester** — no files reviewed yet, add description and tech tags
+- [ ] **Pokémon Card Browser** — in progress, no files reviewed yet
+- [ ] **Capture-the-flag online** — repo exists, not on portfolio at all yet
+- [ ] **Mr. Ross / Uncle Nigel / Morgan State** — add when cleared up and finished
+
+### Site improvements
+- [ ] Add GitHub repo links to project cards where repos are public
+- [ ] Decide whether to add more skills to the About section (SQL, Git, PyTorch, C/C++)
+- [ ] Consider adding a profile photo to the homepage hero
+- [ ] Consider a dark mode toggle
